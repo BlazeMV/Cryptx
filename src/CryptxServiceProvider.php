@@ -36,7 +36,7 @@ class CryptxServiceProvider extends ServiceProvider
 
         $this->app->singleton('cryptx', function () {
             $config = config('cryptx');
-            return new Cryptx($config);
+            return new Cryptx($config['secret_key_path'], $config['public_key_path'], $config['keypair_options']);
         });
     }
 
