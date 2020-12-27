@@ -1,0 +1,60 @@
+{
+  "name": "blazemv/cryptx",
+  "description": "Simple PHP library for encrypting and decrypting data using private and public pem key files",
+  "type": "library",
+  "keywords": [
+    "php",
+    "cryptx",
+    "openssl",
+    "laravel",
+    "crypto",
+    "cryptography",
+    "encryption",
+    "decryption",
+    "encrypt",
+    "decrypt"
+  ],
+  "homepage": "https://github.com/blazemv/cryptx",
+  "support": {
+    "issues": "https://github.com/blazemv/cryptx/issues",
+    "source": "https://github.com/blazemv/cryptx"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adam Dawood",
+      "email": "ad.adamdavid72@gmail.com",
+      "homepage": "https://github.com/blazemv",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "illuminate/support": ">=5.0.0",
+    "illuminate/console": ">=5.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Blaze\\Cryptx\\" : "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "aliases": {
+        "Cryptx": "Blaze\\Cryptx\\Facades\\Cryptx"
+      },
+      "providers": [
+        "Blaze\\Cryptx\\CryptxServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

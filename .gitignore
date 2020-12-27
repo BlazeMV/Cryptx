@@ -1,0 +1,10 @@
+/vendor
+/.idea
+/.vscode
+/.vagrant
+index.php
+composer.phar
+composer.lock
+build/
+*.key
+*.pem
